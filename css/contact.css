@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&display=swap");
+
+.body {
+  background-image: url("../img/photo5.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+  color: #fd454b;
+  font-family: "Montez", sans-serif;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 45px; */
+}
+
+main p {
+  position: relative;
+  z-index: 5;
+  color: #252e70;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: -7px;*/
+  font-family: "Love Light", cursive;
+  font-size: 1.9em;
+}
+
+main .img2 {
+  position: relative;
+  z-index: 5;
+  /* padding-top: 50px; */
+  /*right: -250px;*/
+}
+
+main .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  z-index: 5;
+  padding-top: 30px;
+  margin-left: 100px;
+}
+
+.body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  backdrop-filter: blur(15px);
+}
+
+.contact-insta::after {
+  content: "@yifanah_";
+  background-color: black;
+  color: cornflowerblue;
+  border-radius: 20px;
+  opacity: 0;
+  display: block;
+  z-index: 5;
+  transform: translateY(-10px);
+  transition: all 300ms ease-out;
+  padding: 5px 5px;
+}
+
+.contact-insta:hover:after {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+.contact-gmail::after {
+  content: "contactyifanah@gmail.com";
+  background-color: black;
+  color: cornflowerblue;
+  border-radius: 20px;
+  opacity: 0;
+  display: block;
+  z-index: 5;
+  transform: translate(-40px, -10px);
+  transition: all 300ms ease-out;
+  padding: 5px 5px;
+}
+
+.contact-gmail:hover:after {
+  opacity: 1;
+  transform: translate(-40px, 5px);
+}
+
+.contact-gmail {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    background-image: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #252e70;
+  }
+  .body::after {
+    display: none;
+  }
+  .contact-mobile {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 120px;
+    text-align: center;
+  }
+}

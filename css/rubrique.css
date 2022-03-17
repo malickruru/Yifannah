@@ -1,0 +1,37 @@
+.rubrique-container {
+  /* overflow: hidden; */
+  background-color: #f66137;
+  padding: 100px 200px;
+  box-sizing: border-box;
+}
+
+.owl-item img {
+  max-width: 400px;
+}
+
+.owl-item a:hover .rubrique-hover {
+  opacity: 0.7;
+}
+
+.owl-item {
+  background-color: white;
+  border-radius: 20px;
+
+  position: relative;
+}
+
+.owl-item > div {
+  display: flex;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .rubrique-container {
+    background-color: #f66137;
+    padding: 25px;
+    padding-top: 150px;
+  }
+  .owl-item > div > img {
+    display: none !important;
+  }
+}

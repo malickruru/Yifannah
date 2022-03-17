@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    </head>
+<body class="body">
+    <div class="menu d-flex a-items-center  " id=menu>
+        <ul>
+            <li> <a href="index.html" class="menu-a">Accueil</a> </li>
+            <li> <a href="equipe.html" class="menu-a">Notre équipe</a> </li>
+            <li><a href="rubrique.html" class="menu-a">Rubrique</a></li>
+            <!-- <li><a href="" class="menu-a">Crédit</a></li> -->
+            <li><a href="contact.html" class="menu-a">Contact</a></li>
+        </ul>
+        <a href="index.html" class="d-none_on_mobile"><img src="img/yifanah-logo.png" alt=""></a>
+    </div>
+
+    <div class="sidebar d-flex column-flex a-items-center j-content-spacearound d-none_on_mobile">
+       
+        <div class="logo-sidebar d-flex j-content-center a-items-center"><a href="index.html"><img class="img" src="img/yifanah-logo.png" alt=""></a></div>
+        <span class="span-menu" ><h1> Contact</h1></span>       
+    </div>
+
+    <div class="menu-sidebar d-flex a-items-center j-content-center column-flex" onclick="menu_deroulant()">
+        <div class="menu-toggle" id="menu-toggle-1"></div>
+        <div class="menu-toggle" id="menu-toggle-2"></div>
+        <div class="menu-toggle" id="menu-toggle-3"></div>
+    </div>
+
+    <main class="d-flex justify-content-center a-items-center column-flex section d-none_on_mobile">
+
+        <div class="header">
+            <h3>Voulez-vous plus apprendre sur nous?</h3>     
+        </div>
+
+        <p>Yifanah</p>
+
+        <div class="img2">
+            <img  src="img/yifanah-logo.png" alt="yifanah" width="250">
+        </div>
+        <div class="buttons">
+        <a  href="https://www.instagram.com/yifanah_/" class="contact-insta"><img src="img/instagram.png" alt="instagram" width="105"></i></a>
+        <a  onclick="copy()" class="contact-gmail"><img src="img/gmail.png" alt="gmail" width="105"></i></a>
+    </div>  
+    </main>
+
+    <div class="mobile-content d-flex column-flex j-content-center a-items-center purple-bg contact-mobile">
+        <h1>Contacter-nous</h1>
+        <a href="https://www.instagram.com/yifanah_/" class="lien"><i class="bi bi-instagram"></i>Instagram</a>
+        <a onclick="copy()" class="lien"><i class="bi bi-instagram"></i>Mail</a>
+    </div>
+    
+<!-- le loader -->
+<div class="loader">
+    <div class="progress">
+        <img src="img/yifanah-logo.png" alt="">
+        <div></div>
+    </div>
+    </div>
+
+
+
+    <script src="script/menu.js"></script>
+    <script src="script/loader.js"></script>
+    <script>
+        function copy() {
+  navigator.clipboard.writeText("contactyifanah@gmail.com");  
+  alert("contactyifanah@gmail.com est copié dans le presse-papier");
+}
+    </script>
+    <!-- <script src="script/loader.js"></script> -->
+</body>
+</html>

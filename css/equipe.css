@@ -1,0 +1,113 @@
+.equipe-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  margin: 0;
+  padding: 0;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "iba farah"
+    "equipe-titre equipe-titre"
+    "noura akouba";
+  background-color: #242f6f;
+}
+
+.equipe-titre {
+  grid-area: equipe-titre;
+  color: #fff;
+}
+
+.iba {
+  position: absolute;
+  grid-area: iba;
+}
+
+.farah {
+  position: absolute;
+  grid-area: farah;
+}
+
+.noura {
+  position: absolute;
+  grid-area: noura;
+}
+
+.akouba {
+  position: absolute;
+  grid-area: akouba;
+}
+
+.equipe-img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  transition: all 400ms ease-out;
+  position: relative;
+  box-shadow: 5px 5px 10px rgb(44, 44, 44);
+}
+
+.img-iba {
+  background-image: url("../img/grace.PNG");
+}
+
+.iba:hover .img-iba {
+  height: 580px;
+  width: 580px;
+  border-radius: 0;
+  transform: translate(60%, 35%);
+  z-index: 9;
+  background-image: url("../img/iba2.png");
+}
+
+.img-farah {
+  background-image: url("../img/farah.PNG");
+}
+
+.farah:hover .img-farah {
+  height: 580px;
+  width: 580px;
+  border-radius: 0;
+  transform: translate(-60%, 35%);
+  z-index: 9;
+  background-image: url("../img/farah2.png");
+}
+
+.img-noura {
+  background-image: url("../img/noura.PNG");
+}
+
+.noura:hover .img-noura {
+  height: 580px;
+  width: 580px;
+  border-radius: 0;
+  transform: translate(60%, -35%);
+  z-index: 9;
+  background-image: url("../img/noura2.png");
+}
+.img-akouba {
+  background-image: url("../img/akouba.PNG");
+}
+
+.akouba:hover .img-akouba {
+  height: 580px;
+  width: 580px;
+  border-radius: 0;
+  transform: translate(-60%, -35%);
+  z-index: 9;
+  background-image: url("../img/akouba2.PNG");
+}
+
+@media screen and (max-width: 768px) {
+  .equipe-mobile {
+    padding: 25px;
+    padding-top: 10vh;
+    text-align: center;
+  }
+  .equipe-mobile > img {
+    max-width: 80vw;
+    margin: 15px 0;
+  }
+}

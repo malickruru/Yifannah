@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>équipe d'Yifanah</title>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/equipe.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body >
+    <div class="menu d-flex a-items-center  " id=menu>
+        <ul>
+            <li> <a href="index.html" class="menu-a">Accueil</a> </li>
+            <li> <a href="equipe.html" class="menu-a">Notre équipe</a> </li>
+            <li><a href="rubrique.html" class="menu-a">Rubrique</a></li>
+            <!-- <li><a href="" class="menu-a">Crédit</a></li> -->
+            <li><a href="contact.html" class="menu-a">Contact</a></li>
+        </ul>
+        <a href="index.html" class="d-none_on_mobile"><img src="img/yifanah-logo.png" alt=""></a>
+    </div>
+    <div class="sidebar d-flex column-flex a-items-center j-content-spacearound d-none_on_mobile">
+       
+        <div class="logo-sidebar d-flex j-content-center a-items-center"><a href="index.html"><img class="img" src="img/yifanah-logo.png" alt=""></a></div>
+        <span class="span-menu" ><h1> Notre équipe</h1></span>       
+    </div>
+
+    <div class="menu-sidebar d-flex a-items-center j-content-center column-flex" onclick="menu_deroulant()">
+        <div class="menu-toggle" id="menu-toggle-1"></div>
+        <div class="menu-toggle" id="menu-toggle-2"></div>
+        <div class="menu-toggle" id="menu-toggle-3"></div>
+    </div>
+
+    <div class="section equipe-container d-none_on_mobile">
+        <div class="equipe-titre">
+            <h1>Partez à la rencontre des membres d'Yifanah</h1>
+        </div>
+        <div class="iba">
+            <div class="equipe-img img-iba"> </div>
+        </div>
+        <div class="farah">
+            <div class="equipe-img img-farah" ></div>
+        </div>
+        <div class="noura">
+            <div class="equipe-img img-noura"> </div>
+        </div>
+        <div class="akouba">
+            <div class="equipe-img img-akouba" ></div>
+        </div>
+      </div>
+
+      <div class="mobile-content d-flex j-content-center a-items-center purple-bg equipe-mobile">
+     
+        <h1>Partez à la rencontre des membres d'Yifanah</h1>
+    
+        <img src="img/akouba2.PNG" alt="">
+        <img src="img/farah2.png" alt="">
+        <img src="img/iba2.png" alt="">
+        <img src="img/noura2.png" alt="">
+     
+      
+  </div>
+
+
+      <!-- le loader -->
+<div class="loader">
+    <div class="progress">
+        <img src="img/yifanah-logo.png" alt="">
+        <div></div>
+    </div>
+    </div>
+
+    <script src="script/menu.js"></script>
+    <script src="script/loader.js"></script>
+</body>
+</html>

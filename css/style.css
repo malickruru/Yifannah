@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* outfit */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit:wght@100&family=Playfair+Display:wght@800&display=swap");
+/* franklin */
+@font-face {
+  font-family: "franklin";
+  src: url(../Franklin/Franklin\ Gothic\ Heavy\ Regular.ttf);
+}
+a {
+  text-decoration: none !important;
+}
+.o-hidden {
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.j-content-spacearound {
+  justify-content: space-around;
+}
+
+.j-content-spacebetween {
+  justify-content: space-between;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.a-items-end {
+  align-items: flex-end;
+}
+
+.column-flex {
+  flex-direction: column;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.p-20 {
+  padding: 20px 40px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.h1 {
+  font-family: "franklin";
+  font-size: 6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.display-3rem {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  font-family: "franklin";
+}
+
+.p {
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  font-family: "Outfit";
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+span {
+  font-family: "Outfit";
+}
+
+/*----------------------------------------------*/
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100px;
+  background-color: #242f6f;
+  top: 0;
+  border-right: 0.5px solid #feae31;
+  z-index: 10;
+}
+
+.logo-sidebar {
+  height: 100px;
+  border-bottom: 0.5px solid #feae31;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+}
+
+.img {
+  width: 74px;
+  height: auto;
+}
+
+.menu-sidebar {
+  height: 100px;
+  width: 100px;
+  background-color: #feae31;
+  position: fixed;
+  top: 0;
+  left: 100px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.indicateur {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px #fff solid;
+  cursor: pointer;
+  transition: background-color 500ms ease-out;
+}
+
+#ind-1 {
+  background-color: #fff;
+}
+
+.menu-toggle {
+  height: 3px;
+  width: 50%;
+  background-color: black;
+  margin: 5px;
+  transition: transform 500ms ease-out;
+}
+
+.menu {
+  height: 0;
+  width: 100vw;
+  transition: height 500ms ease-out;
+  background-color: #242f6f;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  /* padding-left: 100px; */
+  padding: 0 100px 0 300px;
+}
+
+.menu > ul > li {
+  list-style: decimal;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.menu > ul > li > a {
+  color: #fff;
+}
+
+.menu > img {
+  margin: 0 200px;
+}
+
+.menu-a {
+  position: relative;
+
+  font-size: 3rem;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.menu-a::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: width 300ms ease-out;
+}
+
+.menu-a:hover:after {
+  width: 100%;
+}
+
+.span-menu {
+  color: #fff;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+/*--------------------------------------------*/
+.lien {
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #242f6f;
+  font-size: 1.5em;
+  border: 1px #242f6f solid;
+  transition: 0.3s;
+}
+
+.lien:hover {
+  background-color: #242f6f;
+  color: #fff;
+}
+
+.mobile-content {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-none_on_mobile {
+    display: none;
+  }
+  .menu-sidebar {
+    left: 0;
+  }
+  body {
+    overflow: scroll;
+  }
+
+  .f-size-1 {
+    font-size: 1.8em;
+  }
+
+  .f-size-2 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+  }
+
+  .mobile-content {
+    display: block;
+  }
+
+  .mobile-content > .mobile-section {
+    width: 100vw;
+    height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+  }
+  .purple-bg {
+    background-color: #242f6f;
+    color: #fff;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* padding-left: 100px; */
+    padding: 0;
+  }
+}

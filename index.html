@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yifanah</title>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body >
+    <div class="menu d-flex a-items-center  " id=menu>
+        <ul>
+            <li> <a href="index.html" class="menu-a">Accueil</a> </li>
+            <li> <a href="equipe.html" class="menu-a">Notre équipe</a> </li>
+            <li><a href="rubrique.html" class="menu-a">Rubrique</a></li>
+            <!-- <li><a href="" class="menu-a">Crédit</a></li> -->
+            <li><a href="contact.html" class="menu-a">Contact</a></li>
+        </ul>
+        <a href="index.html" class="d-none_on_mobile"><img src="img/yifanah-logo.png" alt=""></a>
+    </div>
+    <div class="sidebar d-flex column-flex a-items-center j-content-spacearound d-none_on_mobile">
+       
+        <div class="logo-sidebar d-flex j-content-center a-items-center"><a href="index.html"><img class="img" src="img/yifanah-logo.png" alt=""></a></div>
+        <span></span>
+        <div class="indicateur" id="ind-1" onclick="menu_scroll(0)"></div>
+        <div class="indicateur" id="ind-2" onclick="menu_scroll(500)"></div>
+        <div class="indicateur" id="ind-3" onclick="menu_scroll(1000)"></div>
+        <div class="indicateur" id="ind-4" onclick="menu_scroll(1500)"></div>
+        
+    </div>
+
+    <div class="menu-sidebar d-flex a-items-center j-content-center column-flex" onclick="menu_deroulant()">
+        <div class="menu-toggle" id="menu-toggle-1"></div>
+        <div class="menu-toggle" id="menu-toggle-2"></div>
+        <div class="menu-toggle" id="menu-toggle-3"></div>
+    </div>
+    <div class="conteneur d-none_on_mobile" id="cont">
+        <div class="section section-1 d-flex a-items-center j-content-center">
+            <div class="section-1-content" id="section-1-content"><h1 class="h1">Yifanah</h1>
+                <p class="p"><span style="color: #F36139;">𝖢𝗋𝖾́𝖺𝗍𝗂𝗏𝗂𝗍𝖾́</span>  <span style="color: #FEAE31;">A𝗎𝗍𝗁𝖾𝗇𝗍𝗂𝖼𝗂𝗍𝖾́</span> <span style="color: #feafb2;">A𝗎𝖽𝖺𝖼𝖾</span> </p>        
+                <i class="bi bi-chevron-double-down"></i></div>
+            </div>
+
+            <div class="section section-2 d-flex" id="section-2">
+            <div class="section-2-right p-20 ">
+                <h1 >Yifanah c'est quoi ?</h1>
+                <p> Yifanah est un collectif regroupant quatre jeunes étudiantes de l’institut Français du numérique d’Abidjan. Akouba, Farah, Grâce et Noura ont choisi de se réunir afin de vous partager leur différents univers, tous en lien avec le digital : la création graphique, la communication et le développement web.</p>
+                <a href="equipe.html" class="lien" >Découvrir les membres</a>
+            </div> 
+            <div class="section-2-left">
+
+            </div>   
+            </div>
+
+            <div class="section section-3 d-flex" id="section-3">
+                <div class="section-3-right">
+
+                </div> 
+                <div class="section-3-left p-20">
+                    <h1>Rubrique</h1>
+                    <p> Les productions de Yifanah se répartissent en différentes rubriques, tel que des day talk, des publi-reportages racontant le quotidien des étudiantes, des conseils sur le graphisme ,des débats de sociétés</p>
+                    <a href="rubrique.html" class="lien" >En savoir +</a>
+                </div>
+            </div>
+            <div class="section section-4 p-20" id="section-4">
+                <h1 class="h1" style="color: #fff;">Rejoignez nous sur instagram </h1>
+                <a href="https://www.instagram.com/yifanah_/" class="lien"><i class="bi bi-instagram"></i>@yifanah_</a>
+            </div>
+    </div>
+    
+
+<!-- contenu sur mobile -->
+<div class="mobile-content purple-bg">
+    <div class="mobile-section column-flex d-flex a-items-center j-content-center">
+        <h1 class="h1">Yifanah</h1>
+        
+            <span style="color: #F36139;" class="f-size-1">𝖢𝗋𝖾́𝖺𝗍𝗂𝗏𝗂𝗍𝖾́</span>
+            <span style="color: #FEAE31;"  class="f-size-1">A𝗎𝗍𝗁𝖾𝗇𝗍𝗂𝖼𝗂𝗍𝖾́</span>
+            <span style="color: #feafb2;"  class="f-size-1">A𝗎𝖽𝖺𝖼𝖾</span>
+        
+    </div>
+    <div class="mobile-section column-flex d-flex a-items-center j-content-center">
+        <h1 class="f-size-2">Yifanah c'est quoi</h1>
+        <p class="f-size-1"> Yifanah est un collectif regroupant quatre jeunes étudiantes de l’institut Français du numérique d’Abidjan. Akouba, Farah, Grâce et Noura ont choisi de se réunir afin de vous partager leur différents univers, tous en lien avec le digital : la création graphique, la communication et le développement web.</p>
+        <a href="equipe.html" class="lien" >Découvrir les membres</a>
+            
+    </div>
+    <div class="mobile-section column-flex d-flex a-items-center j-content-center">
+        <h1 class="f-size-2">Rubrique</h1>
+        <p class="f-size-1"> Les productions de Yifanah se répartissent en différentes rubriques, tel que des day talk, des publi-reportages racontant le quotidien des étudiantes, des conseils sur le graphisme ,des débats de sociétés</p>
+        <a href="rubrique.html" class="lien" >En savoir +</a>
+                
+    </div>
+    <div class="mobile-section column-flex d-flex a-items-center j-content-center">
+        <h1 class="f-size-2"  style="color: #fff; text-align: center;">Rejoignez nous sur instagram </h1>
+        <a href="https://www.instagram.com/yifanah_/" class="lien"><i class="bi bi-instagram"></i>@yifanah_</a>
+    </div>
+</div>
+
+
+
+<!-- le loader -->
+<div class="loader">
+    <div class="progress">
+        <img src="img/yifanah-logo.png" alt="">
+        <div></div>
+    </div>
+    </div>
+
+    <!-- <script src="script/script.js"></script> -->
+    <script src="script/scroll.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/loader.js"></script>
+</body>
+</html>

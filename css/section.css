@@ -1,0 +1,184 @@
+/*------------------------------------section-01----------------------------------------*/
+
+.section-1 {
+  background-image: url("../img/photo-a-4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -50px;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  padding: 50px 150px;
+  animation-duration: 6.2s;
+  animation-name: zoom-out;
+}
+
+.section-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #242f6f;
+  opacity: 0.5;
+  filter: brightness(20%);
+}
+
+.section-1-content {
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  animation-duration: 6.2s;
+  animation-name: text-in;
+}
+
+.section-1-content > i {
+  position: relative;
+  font-size: 2em;
+  top: 140px;
+  animation-name: scroll-bounce;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll-bounce {
+  0% {
+    top: 160px;
+  }
+  20% {
+    top: 160px;
+  }
+  40% {
+    top: 140px;
+  }
+  60% {
+    top: 160px;
+  }
+  80% {
+    top: 140px;
+  }
+  100% {
+    top: 160px;
+  }
+}
+@keyframes zoom-out {
+  0% {
+    background-size: 200%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes zoom-out-70 {
+  0% {
+    background-size: 200%;
+  }
+  100% {
+    background-size: 70%;
+  }
+}
+
+@keyframes text-in {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*----------------------------*/
+
+.conteneur {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+/*--------------------------*/
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.section-2 {
+  box-sizing: border-box;
+  background-color: #fff;
+  z-index: 3;
+  /*transform: translateY(100vh);*/
+}
+
+.section-3 {
+  box-sizing: border-box;
+  background-color: #feae31;
+  z-index: 4;
+}
+
+.section-4 {
+  background-color: palevioletred;
+  z-index: 5;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------Section 2------------------------------------------------*/
+
+.section-2-right {
+  height: 100vh;
+  width: 50%;
+  padding: 100px 10px 20px 110px;
+}
+
+.section-2-left {
+  height: 100vh;
+  width: 50%;
+  background-image: url("../img/photo2.jpeg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 140% -150px;
+  background-attachment: fixed;
+  animation-duration: 5s;
+  animation-name: zoom-out-70;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------Section 3------------------------------------------------*/
+.section-3-left {
+  height: 100vh;
+  width: 60%;
+  padding: 20px 10px 20px 10px;
+}
+
+.section-3-right {
+  height: 100vh;
+  width: 40%;
+  background-image: url("../img/day-talk-rouge.jpeg");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: 100px 0px;
+  background-attachment: fixed;
+  animation-duration: 5s;
+  animation-name: zoom-out-70;
+}
+
+.section-4 {
+  padding: 120px 50px 70px 120px;
+  max-height: 70vh;
+}

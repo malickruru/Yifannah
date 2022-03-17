@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les rubrique d'Yifanah</title>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/rubrique.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <!-- owl carousel -->
+     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+</head>
+<body class="o-hidden ">
+    <div class="menu d-flex a-items-center  " id=menu>
+        <ul>
+            <li> <a href="index.html" class="menu-a">Accueil</a> </li>
+            <li> <a href="equipe.html" class="menu-a">Notre équipe</a> </li>
+            <li><a href="rubrique.html" class="menu-a">Rubrique</a></li>
+            <!-- <li><a href="" class="menu-a">Crédit</a></li> -->
+            <li><a href="contact.html" class="menu-a">Contact</a></li>
+        </ul>
+        <a href="index.html" class="d-none_on_mobile"><img src="img/yifanah-logo.png" alt=""></a>
+    </div>
+    <div class="sidebar d-flex column-flex a-items-center j-content-spacearound d-none_on_mobile">
+       
+        <div class="logo-sidebar d-flex j-content-center a-items-center"><a href="index.html"><img class="img" src="img/yifanah-logo.png" alt=""></a></div>
+        <span class="span-menu" ><h1> Rubrique</h1></span>       
+    </div>
+
+    <div class="menu-sidebar d-flex a-items-center j-content-center column-flex" onclick="menu_deroulant()">
+        <div class="menu-toggle" id="menu-toggle-1"></div>
+        <div class="menu-toggle" id="menu-toggle-2"></div>
+        <div class="menu-toggle" id="menu-toggle-3"></div>
+    </div>
+
+    <!-- <div class="section  rubrique-container d-flex " id="rubrique"> -->
+        <div class=" section rubrique-container owl-carousel d-flex j-content-center a-items-center " >
+        <div class="column-flex j-content-center a-items-center">
+            <h1>Rubrique</h1>
+                    <p> le blog Yifanah s'organise en plusieurs rubrique tel que des day talk, des publi-reportage, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor obcaecati rerum illum atque et, ipsum dignissimos, tempora quos quae vero nemo exercitationem iusto facere, quasi molestias in animi voluptatibus. Mollitia!  </p>
+        </div>
+        <div >
+            <img src="img/klerDansMabrecham.PNG" class="d-none_on_mobile" alt=""> 
+                <div>
+                    <h1>KLER DANS MA BRE-CHAMBRE</h1>
+            <p>On a chacun notre petit univers, n’est-ce pas 👀👀 Art 🎨 sport 🤸🏾cuisine 🥘
+                Ces choses qu’on pourrait faire des heures sans voir le temps passer, parce qu’elles nous passionnent et nous permettent de nous exprimer.
+                À Yifanah, ce que vous aimez nous intéresse, alors nous avons créé la rubrique : “Kalé dans ma bre-chambre”. L’idée étant de permettre à vous, nos (potentiels) invités de nous faire découvrir vos passions et inspirations✨</p>
+        
+                </div>
+            </div>
+       
+        <div >
+            <img src="img/teud.PNG" alt="" class="d-none_on_mobile">
+            <div >
+            <h1>TEUD</h1>
+            <p>Ce soir on vous présente la deuxième rubrique : les « TEUD » 🥳🥳🥳
+                “TEUD” pour “Tu Es Un Dur” et “Tu Es Une Dure” 😉💪🏾
+                Une rubrique pour partager des proverbes et citations un peu décalés, pour se redonner de la motivation dans les jours difficiles 💥💥
+                TEUD, parce que même les plus forts ont besoin d’être encouragés de temps en temps 💪🏾</p></div></div>
+      
+        <div >
+            <img src="img/day-talk-blanc.jpeg" alt="" class="d-none_on_mobile">
+            <div >
+            <h1>Day Talk</h1>
+            <p>Retour en images sur notre Day Talk “De meilleures relations entre hommes et femmes” 🧑🏿‍🦱👩🏾
+                💫L’une des activités consistait à dresser une liste d’éléments qui représentent chaque genre : une liste pour les filles dressée par les garçons, et une autre pour les garçons dressée par les filles.     
+                Et vous, qu’est-ce que vous en pensez? 💭Comment vous voyez celles (et ceux) avec qui vous échangez quotidiennement⁉️</p>
+            </div>  
+      </div>
+        <div >
+           <img src="img/digday.PNG" alt="" class="d-none_on_mobile">
+            <div >
+            <h1>Dig Day</h1>
+            <p>La rubrique Dig’day est purement dédiée au digital. Tendances, dernières sorties, astuces : tout pour comprendre l’évolution de l’univers numérique 📌</p></div>
+        
+        </div>
+        
+      </div>
+
+      <!-- <div class="fleche-navigation" id="precedent" onclick="precedent()"><i class="bi bi-chevron-left"></i></div>
+      <div class="fleche-navigation" id="suivant" onclick="suivant()"><i class="bi bi-chevron-right"></i></div> -->
+
+      <!-- le loader -->
+<div class="loader">
+    <div class="progress">
+        <img src="img/yifanah-logo.png" alt="">
+        <div></div>
+    </div>
+    </div>
+
+    <!-- owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script/carousel.js"></script>
+
+
+    <script src="script/menu.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
